@@ -27,9 +27,11 @@
 {% endfor %}
 <section>
   <div style="width: 75%; margin: auto; text-align: center; color: white">
-    <span>Categorías:</span>
-    {% for post in posts %} {% for categoria in post.categorias.all %}
-    {{categoria.nombre}}&nbsp;&nbsp;&nbsp; {% endfor %} {% endfor %}
+    <span> Categorias: {{ categoria.nombre }}</span>
+
+    {% for post in posts %}
+    <!-- Mostrar los posts de la categoría aquí -->
+    {% endfor %}
   </div>
 </section>
 {% endblock %}
